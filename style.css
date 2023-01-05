@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Fraunces;
+    src: url(Fraunces-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url(Montserrat-VariableFont_wght.ttf);
+    font-weight: 700;
+}
+.bg {
+    /* font-family: "Outfit", sans-serif;
+    font-size: 15px; */
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: calc(100vh - 1px); */
+    height: 100vh;
+    margin: -10px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 40%;
+    border-radius: 5px;
+    background-color: white;
+}
+.image {
+    height: 100%;
+    width: 50%;
+    border-radius: 5px 0px 0px 5px;
+}
+.image2 {
+    display: none;
+}
+.right {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 2% 5% 5% 5%;
+}
+.card p {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 150%;
+    color: #878690;
+}
+.card h1 {
+    font-family: Fraunces;
+    line-height: 95%;
+}
+.prices {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.button {
+    display: flex;
+    flex-direction: row;
+    background-color: #3D8069;
+    border-radius: 5px;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.button img {
+    height: auto;
+    width: auto;
+    padding-right: 5px;
+}
+.price {
+    color: #3D8069;
+    
+}
+.price-old {
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+.button p {
+    color: white;
+}
+@media (max-width: 376px) {
+    .container{
+        flex-direction: column;
+        height: 90%;
+        width: 90%;
+    }
+    .image { 
+        display: none;
+    }
+    .image2 {
+        display: block;
+        width: 100%;
+        height: 40%;
+        src: "./images/image-product-desktop.jpg";
+        border-radius: 5px 5px 0px 0px;
+    }
+    .right {
+        align-items: center;
+        justify-content: center;
+        height: 60%;
+        width: 100%;
+        padding: 2% 5% 5% 5%;
+    }
+    .card {
+        width: 100%
+    }
+}
+/* .box {
+    background-color: hsl(158, 36%, 37%);
+} */
